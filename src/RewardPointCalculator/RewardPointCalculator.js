@@ -2,7 +2,7 @@
   import { fetchTransactions } from "../services/transactionService";
   import { calculateRewardPoints } from "../utils/calculationUtils";
   import { debounce } from "../utils/debounceUtils";
-  import "./RewardPointsCalculator.css"; // Import CSS for styling
+  import "./RewardPointsCalculator.css";
 
   const RewardPointsCalculator = () => {
     const [transactions, setTransactions] = useState([]);
@@ -43,7 +43,6 @@
       return <div className="error-message">Error: {error}</div>;
     }
 
-    // Filter customers by search term
     const filteredCustomers = Object.keys(rewardPoints).filter((customerId) =>
       customerId.toLowerCase().includes(searchTerm.toLowerCase())
     );

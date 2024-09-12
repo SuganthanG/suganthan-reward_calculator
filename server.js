@@ -1,13 +1,9 @@
-// server.js
-
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const port = 3001; // Use a different port to avoid conflicts with the React app
+const port = 3001; 
+app.use(cors());
 
-app.use(cors()); // Enable CORS for all routes
-
-// Mock data to be served
 const transactions = [
   { customerId: "cust101", transactionAmount: 120, transactionDate: "2024-06-15" },
   { customerId: "cust101", transactionAmount: 75, transactionDate: "2024-06-25" },
@@ -32,12 +28,12 @@ const transactions = [
 
 ];
 
-// Endpoint to get all transactions
+// Endpoint to get transactions
 app.get("/api/transactions", (req, res) => {
   res.json(transactions);
 });
 
-// Start the server
+// Server running in
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
