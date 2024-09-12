@@ -1,0 +1,70 @@
+/* RewardPointsCalculator.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #4a90e2;
+  }
+  
+  input[type="text"] {
+    display: block;
+    width: 40%;
+    padding: 10px;
+    margin: 20px auto; /* Center horizontally */
+    border: 1px solid #d6d3d3;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    color: #4a4a4a;
+    margin: 15px 0 5px;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  
+  strong {
+    color: #333;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    text-align: center;
+  }
+  
+  .loading-message {
+    text-align: center;
+    color: #4a90e2;
+    font-size: 1.2em;
+  }
+  
+  .total-points {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 20px;
+  }
+  .no-results-message{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 20px; 
+  }

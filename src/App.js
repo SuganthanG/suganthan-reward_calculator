@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import RewardPointsCalculator from './RewardPointCalculator';
+import RewardPointsCalculator from './RewardPointCalculator/RewardPointCalculator';
 
 function App() {
   return (
